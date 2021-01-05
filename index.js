@@ -3,14 +3,14 @@ for(var i=0;i<btnArray.length;i++){
     btnArray[i].addEventListener('click', function() {
         var p = this.classList;
         p.remove("pink")
-        setTimeout(1000)
+        setTimeout(5000)
         p.add("red")
         p.add("pressed")
         var audio = new Audio();
         audio.src=`sounds/${this.classList[0]}.mp3`;
         audio.play();
         setTimeout(function(){ p.add("pink");
-        p.remove("pressed");}, 100);
+        p.remove("pressed");}, 200);
         
 
     })
