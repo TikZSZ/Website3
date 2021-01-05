@@ -10,9 +10,7 @@ for(var i=0;i<btnArray.length;i++){
         audio.src=`sounds/${this.classList[0]}.mp3`;
         audio.play();
         setTimeout(function(){ p.add("pink");
-        p.remove("pressed");}, 200);
-        
-
+        p.remove("pressed");}, 300);
     })
 }
 
