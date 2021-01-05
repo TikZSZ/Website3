@@ -9,8 +9,10 @@ for(var i=0;i<btnArray.length;i++){
         var audio = new Audio();
         audio.src=`sounds/${this.classList[0]}.mp3`;
         audio.play();
-        setTimeout(function(){ p.add("pink");
-        p.remove("pressed");}, 300);
+        setTimeout(function(){ 
+           p.remove("red")
+           p.add("pink");
+           p.remove("pressed");}, 220);
     })
 }
 
