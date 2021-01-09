@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var span = document.querySelector('.span').innerHTML;
 // style functions
 function addstyle(p) {
@@ -28,20 +42,6 @@ document.addEventListener('keydown', function (event) {
 	play(event.key);
 });
 // player
-var audio1 = new Audio();
-audio1.src = "sounds/crash.mp3";
-var audio2 = new Audio();
-audio2.src = "sounds/kick-bass.mp3";
-var audio3 = new Audio();
-audio3.src = "sounds/snare.mp3";
-var audio4 = new Audio();
-audio4.src = "sounds/tom-1.mp3";
-var audio5 = new Audio();
-audio5.src = "sounds/tom-2.mp3";
-var audio6 = new Audio();
-audio6.src = "sounds/tom-3.mp3";
-var audio7 = new Audio();
-audio7.src = "sounds/tom-4.mp3";
 
 function play(keyp) {
 
@@ -50,13 +50,19 @@ function play(keyp) {
 		var w = document.querySelector('.crash');
 		addstyle(w);
 		tutroial(w);
-		audio1.play();
+		var audio1 = new Audio();
+        audio1.src = "sounds/crash.mp3";
+        audio1.preload="auto"
+        audio1.play()
 		removestyle(w);
 		break;
 	case "a":
 		var a = document.querySelector('.kick-bass');
 		addstyle(a);
 		tutroial(a);
+		var audio2 = new Audio();
+        audio2.src = "sounds/kick-bass.mp3";
+        audio2.preload="auto"
 		audio2.play();
 		removestyle(a);
 		break;
@@ -64,6 +70,9 @@ function play(keyp) {
 		var s = document.querySelector('.snare');
 		addstyle(s);
 		tutroial(s);
+		var audio3 = new Audio();
+        audio3.src = "sounds/snare.mp3";
+        audio3.preload="auto"
 		audio3.play();
 		removestyle(s);
 		break;
@@ -71,6 +80,9 @@ function play(keyp) {
 		var d = document.querySelector('.tom-1');
 		addstyle(d);
 		tutroial(d);
+		var audio4 = new Audio();
+        audio4.src = "sounds/tom-1.mp3";
+        audio4.preload="auto"
 		audio4.play();
 		removestyle(d);
 		break;
@@ -78,6 +90,9 @@ function play(keyp) {
 		var j = document.querySelector('.tom-2');
 		addstyle(j);
 		tutroial(j);
+		var audio5 = new Audio();
+        audio5.src = "sounds/tom-2.mp3";
+        audio5.preload="auto"
 		audio5.play();
 		removestyle(j);
 		break;
@@ -85,6 +100,9 @@ function play(keyp) {
 		var k = document.querySelector('.tom-3');
 		addstyle(k);
 		tutroial(k);
+		var audio6 = new Audio();
+        audio6.src = "sounds/tom-3.mp3";
+        audio6.preload="auto"
 		audio6.play();
 		removestyle(k);
 		break;
@@ -92,6 +110,9 @@ function play(keyp) {
 		var l = document.querySelector('.tom-4');
 		addstyle(l);
 		tutroial(l);
+		var audio7 = new Audio();
+        audio7.src = "sounds/tom-4.mp3";
+        audio7.preload="auto"
 		audio7.play();
 		removestyle(l);
 		break;
