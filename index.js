@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var span = document.querySelector('.span').innerHTML;
 // style functions
 function addstyle(p) {
